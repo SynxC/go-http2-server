@@ -65,6 +65,7 @@ curl -X 'DELETE' \
   -H 'accept: */*'
 ```
 
+## Unit Testing
 To run the approriate unit tests:
 ```bash
 go test ./tests
