@@ -4,10 +4,10 @@ Built in Go (1.22.2) using the native HTTP package with h2c support to disable T
 ## Setup
 Please ensure that you have golang installed and setup within your enviroment.
 
-First, initialize the dependancies and packages:
+First, download the dependancies and packages:
 ```bash
 cd go-http2-server
-go mod init go-http2-server
+go mod download
 ```
 Docker is required to containerize the project
 Building the image:
