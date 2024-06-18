@@ -1,0 +1,27 @@
+Instructions to setup and run server:
+
+Ensure that golang (>=1.22.2) version is installed (newer versions should work fine).
+Docker cli is setup.
+For more description, please view the readme file.
+
+Steps:
+1. go mod init go-http2-server
+2. docker build -t go-http2-server .
+3. docker run -d -p 8080:8080 go-http2-server
+
+The server is accessible through:
+http://localhost:8080/api
+
+URLS
+Adding a pet (POST):
+http://localhost:8080/api/v1/pets
+
+Get a pet (GET):
+http://localhost:8080/api/v1/pets/:id
+
+id = the petID which can found from the location header in the POST response from creating a pet.
+
+Delete a pet (DELETE):
+http://localhost:8080/api/v1/pets/:id
+
+id = the petID which can found from the location header in the POST response from creating a pet.

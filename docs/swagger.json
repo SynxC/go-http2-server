@@ -1,0 +1,10 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "API for managing pets in a pet store",
+        "title": "Petstore API",
+        "contact": {},
+        "version": "1.0.0"
+    },
+    "paths": {}
+}

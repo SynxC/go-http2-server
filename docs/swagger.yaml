@@ -1,0 +1,7 @@
+info:
+  contact: {}
+  description: API for managing pets in a pet store
+  title: Petstore API
+  version: 1.0.0
+paths: {}
+swagger: "2.0"
