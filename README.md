@@ -30,6 +30,7 @@ Primary URL for server: http://localhost:8080/api/v1
 - To delete a pet record, send request to http://localhost:8080/api/v1/pets/:id
 
 Methods available:
+
 **POST**
 ```bash
 curl -X 'POST' \
