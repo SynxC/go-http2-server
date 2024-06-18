@@ -1,11 +1,11 @@
 Instructions to setup and run server:
 
-Ensure that golang (>=1.22.2) version is installed (newer versions should work fine).
+Ensure that golang (>=1.22.2) version is installed (newer or older version should work fine).
 Docker cli is setup.
 For more description, please view the readme file.
 
 Steps:
-1. go mod init go-http2-server
+1. go mod download
 2. docker build -t go-http2-server .
 3. docker run -d -p 8080:8080 go-http2-server
 
