@@ -43,9 +43,10 @@ func PostPets(petStore *store.PetStore) http.HandlerFunc {
 		}
 
 		petID := petStore.AddPet(&pet)
+		petObj := petStore.GetPetStorePetsMap()[petID]
 		w.Header().Set("Location", config.BaseURL+config.ApiURL+"/"+strconv.FormatInt(petID, 10))
 		w.WriteHeader(http.StatusCreated)
-		json.NewEncoder(w).Encode(map[string]int64{"id": petID})
+		json.NewEncoder(w).Encode(petObj)
 	}
 }
 
