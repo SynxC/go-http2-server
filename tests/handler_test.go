@@ -46,6 +46,7 @@ func TestPostPets(t *testing.T) {
 			t.Errorf("PostPets returned wrong status code: got %v expected %v", status, http.StatusCreated)
 		}
 
+		// TODO: instead of testing for id, test for the object, decode the object and build the test case for each field
 		expected := `{"id":0}`
 		if strings.TrimSpace(res.Body.String()) != strings.TrimSpace(expected) {
 			t.Errorf("PostPets returned unexpected body: got %v expected %v", res.Body.String(), expected)
